@@ -52,6 +52,8 @@ Route::get('checkout/confirm/{id}', [CheckoutController::class, 'success'])
     ->name('checkout_success')
     ->middleware(['auth', 'verified']);
 
+
+
 Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
     Route::get('/', [DashboardController::class, 'index'])
         ->name('dashboard');
