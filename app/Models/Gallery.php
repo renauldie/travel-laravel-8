@@ -23,6 +23,4 @@ class Gallery extends Model
         return $this->belongsTo(TravelPackage::class, 'travel_packages_id', 'id');
     }
 
-    
-
 }
